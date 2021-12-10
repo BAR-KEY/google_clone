@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import NavButton from "./NavButton";
+import GoogleApp from "./GoogleApp";
+import Login from "./Login";
 
 const Header = () => {
   return (
@@ -12,8 +14,8 @@ const Header = () => {
       <NavRight>
         <NavButton text={"Gmail"} />
         <NavButton text={"이미지"} />
-        <NavButton text={"Google 앱"} />
-        <NavButton text={"로그인"} />
+        <GoogleApp />
+        <Login />
       </NavRight>
     </NavContainer>
   );
@@ -23,7 +25,8 @@ const NavContainer = styled.div`
   display: flex;
   justify-content: space-between;
   font-size: 14px;
-  padding: 10px;
+  padding: 5px;
+  align-items: center;
 `;
 const NavLeft = styled.div`
   display: flex;
